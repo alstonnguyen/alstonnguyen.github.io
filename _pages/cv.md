@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Alston Nguyen | Software Engineer"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,49 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+[alstonnguyen@gmail.com](mailto:alstonnguyen@gmail.com) | [linkedin.com/in/alston-s-nguyen](http://www.linkedin.com/in/alston-s-nguyen/) | [github.com/alstonnguyen](https://github.com/alstonnguyen)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**TECHNICAL SKILLS**
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Frontend: JavaScript (ES6+), TypeScript, React, Next.js, Redux, HTML, CSS, Dart, Flutter  
+Backend: Python, NoSQL, SQL, Apache Kafka, Node.js, Express, Docker
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**EXPERIENCE**
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**Software Engineer (Open Source Project)**	May 2023 \- Present  
+[KafkaTrace](http://www.kafkatrace.com) \- [OS Labs](https://www.opensourcelabs.io/) | *New York, NY (Remote)*
+
+* Created a developer dashboard in React for backend engineers that increases developer productivity by consolidating monitoring tools such as Prometheus, Zipkin, and Jaeger into one view.
+
+* Created an NPM package ([kafkatrace](https://www.npmjs.com/package/kafkatrace)) incorporating OpenTelemetry instrumentation libraries to simplify the instrumentation of Kafka clusters by 93% (from 60+ lines of code to 3).
+
+* Utilized NextAuth.js for open authentication, enhancing user access options and bolstering security.
+
+* Wrote unit and integration tests using Jest.
+
+**Software Engineer / Product Manager**	May 2021 \- Aug 2022  
+LeanTaaS Inc. | *Santa Clara, CA (Remote)*
+
+* Served data to the frontend to enable chemotherapy centers to manage appointments in real-time,  using NextGen Mirth to build, test, and deploy message data pipelines.
+
+* Analyzed and filtered hospital-provided data using Python, reducing chair wait times by up to 50%.
+
+* Created a DevOps script for automating daily ETL of EHR data to Amazon S3 to view on Tableau, which increased patient access by 150%, leading to earnings of up to $20k/ chair annually.
+
+* Data Implementation Support: real-time HL7 FHIR integration of patient protected health information (PHI) data from various EHR systems across 1200 \+ hospitals improving data interoperability and patient care coordination.
+
+**Industrial Engineer** 	Sept. 2018 \- May 2021  
+The Boeing Company | *Everett, WA*	
+
+* Employed SQL queries to achieve a 54% reduction in defects by conducting precise root cause analysis within an extensive parts database, significantly enhancing product quality.
+
+* Created Tableau KPI dashboard, driving improvements to two separate 6-axis robotics arms used for the drilling/filling of airplane parts leading to a 17% increase in OEE and a 34% decrease in downtime.
+
+**EDUCATION**  
+**Georgia Institute of Technology** 	Expected 2026  
+Master of Science, Computer Science
+
+* Enrolled part-time asynchronously / online
+
+**California Polytechnic University** / **University of Washington** 	2016 / 2022  
+Bachelor of Science, Industrial Eng. / Masters of Eng., Systems and Industrial Eng	

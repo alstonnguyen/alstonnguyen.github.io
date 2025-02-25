@@ -1,16 +1,16 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+  name        : "Alston Nguyen"
+  uri         : "http://alstonnguyen.github.io"
+  email       : "alstonnguyen@gmail.com"
+  bio         : "BIO."
   avatar      : "bio-photo-2.jpg"
   twitter     : "name"
   google_plus : "Name"
 
 Name2 Name2:
-  name        : "Name2 Name2"
+  name        : "Alston Nguyen"
   email       : "name2@name2.com"
   bio         : "I ordered what?"
   avatar      : "bio-photo.jpg"
