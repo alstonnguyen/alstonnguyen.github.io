@@ -6,6 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+[📄 Download My Resume](../assets/resume/Alston_Nguyen_Resume.pdf){: .btn .btn-primary }
 
 {% include base_path %}
 
