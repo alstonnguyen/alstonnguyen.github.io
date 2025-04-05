@@ -18,16 +18,23 @@ redirect_from:
 ### EDUCATION
 
 **Georgia Institute of Technology** | Remote / Async | M.S. Computer Science | Sep 2024 – Expected 2026  
-**University of Washington**        | Seattle, WA     | M.Eng. Systems & Industrial Eng | Sep 2020 – Jun 2022  
-**Cal Poly San Luis Obispo**        | San Luis Obispo, CA | B.S. Industrial Engineering | Sep 2011 – Jun 2016
+**University of Washington** | Seattle, WA | M.Eng. Systems & Industrial Eng | Sep 2020 – Jun 2022  
+**Cal Poly San Luis Obispo** | San Luis Obispo, CA | B.S. Industrial Engineering | Sep 2011 – Jun 2016
 
 ---
 
 ### EXPERIENCE
 
+**Indie App Developer**  
+*Stealth Start Up* | Remote  
+*Oct 2024 – Present*  
+• Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and Firebase (Firestore, Auth), supporting Google/Email login, recurring events, multi-calendar filtering, and responsive UI across devices  
+• Implemented CI/CD pipelines using GitHub Actions for automatic builds, tests, and deploys to Firebase Hosting and iOS emulator environments  
+• Built reusable unit and widget tests with high coverage; integrated real-time Firestore sync, data persistence, and robust state management
+
 **Software Engineer**  
 *KafkaTrace – OS Labs* | Remote  
-*May 2023 – Present*  
+*May 2023 – Sep 2024*  
 • Created a developer dashboard in React for backend engineers that increases developer productivity by consolidating monitoring tools such as Prometheus, Zipkin, and Jaeger into one view  
 • Created an NPM package ([kafkatrace](https://www.npmjs.com/package/kafkatrace)) incorporating OpenTelemetry instrumentation libraries to simplify the instrumentation of Kafka clusters by 93% (from 60+ lines of code to 3)  
 • Utilized NextAuth.js for open authentication, enhancing user access options and bolstering security  
@@ -38,7 +45,7 @@ redirect_from:
 *May 2021 – Aug 2022*  
 • Served data to the frontend to enable chemotherapy centers to manage appointments in real-time, using NextGen Mirth to build, test, and deploy message data pipelines  
 • Analyzed and filtered hospital-provided data using Python, reducing chair wait times by up to 50%  
-• Created a DevOps script for automating daily ETL of EHR data to Amazon S3 to view on Tableau, increasing patient access by 150%, leading to earnings of up to \$20k/chair annually  
+• Created a DevOps script for automating daily ETL of EHR data to Amazon S3 to view on Tableau, increasing patient access by 150%, leading to earnings of up to $20k/chair annually  
 • Supported real-time HL7 FHIR integration of PHI data from various EHR systems across 1200+ hospitals, improving interoperability and care coordination
 
 **Industrial Engineer**  
@@ -50,11 +57,6 @@ redirect_from:
 ---
 
 ### PROJECTS
-
-**Calico Calendar** — *Flutter, Firebase, Firestore, GitHub Actions*  
-• Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and Firebase (Firestore, Auth), supporting Google/Email login, recurring events, multi-calendar filtering, and responsive UI across devices  
-• Implemented CI/CD pipelines using GitHub Actions for automatic builds, tests, and deploys to Firebase Hosting and iOS emulator environments  
-• Built reusable unit and widget tests with high coverage; integrated real-time Firestore sync, data persistence, and robust state management
 
 **Autonomous Racing AI** — *Unity, C#, Fuzzy Logic, ML-Agents*  
 • Engineered an AI agent using fuzzy logic and rule-based inference for real-time throttle and steering control in a simulated racing environment; achieved 91%+ test coverage with 40 km/h average speed on complex tracks  
