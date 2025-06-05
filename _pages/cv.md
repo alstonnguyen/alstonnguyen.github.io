@@ -25,7 +25,7 @@ redirect_from:
 
 ### EXPERIENCE
 
-**Founding Engineerr**  
+**Founding Engineer**  
 *Stealth Start Up* | Remote  
 *Oct 2024 – Present*  
 • Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and
