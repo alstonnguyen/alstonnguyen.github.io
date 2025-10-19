@@ -11,7 +11,7 @@ redirect_from:
 
 {% include base_path %}
 
-[alstonnguyen@gmail.com](mailto:alstonnguyen@gmail.com) | [626-688-1843](tel:6266881843) | [linkedin.com/in/alston-s-nguyen](https://linkedin.com/in/alston-s-nguyen) | [github.com/alstonnguyen](https://github.com/alstonnguyen)
+[alstonnguyen@gmail.com](mailto:alston.s.nguyen@gmail.com) | [626-688-1843](tel:6266881843) | [linkedin.com/in/alston-s-nguyen](https://linkedin.com/in/alston-s-nguyen) | [github.com/alstonnguyen](https://github.com/alstonnguyen)
 
 ---
 
@@ -28,7 +28,6 @@ redirect_from:
 **Founding Engineer**  
 *Stealth Start Up* | Remote  
 *Oct 2024 – Present*  
-
 • Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and Supabase (PostgreSQL, Auth), supporting Google/Email login, recurring events, multi-calendar filtering, and responsive UI across devices.  
 • Implemented CI/CD pipelines using GitHub Actions for automatic builds, tests, and deploys to modern web hosting platforms and iOS emulator environments.  
 • Built reusable unit and widget tests with high coverage; integrated real-time PostgreSQL sync via Supabase, robust data persistence, and efficient state management.  
