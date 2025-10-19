@@ -28,13 +28,11 @@ redirect_from:
 **Founding Engineer**  
 *Stealth Start Up* | Remote  
 *Oct 2024 – Present*  
-• Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and
-Supabase (PostgreSQL, Auth), supporting Google/Email login, recurring events, multi-calendar filtering, and
-responsive UI across devices
-• Implemented CI/CD pipelines using GitHub Actions for automatic builds, tests, and deploys to modern web
-hosting platforms and iOS emulator environments
-• Built reusable unit and widget tests with high coverage; integrated real-time PostgreSQL sync via Supabase,
-robust data persistence, and efficient state management
+
+• Independently developed a full-featured calendar and scheduling platform with Flutter (Web + Mobile) and Supabase (PostgreSQL, Auth), supporting Google/Email login, recurring events, multi-calendar filtering, and responsive UI across devices.  
+• Implemented CI/CD pipelines using GitHub Actions for automatic builds, tests, and deploys to modern web hosting platforms and iOS emulator environments.  
+• Built reusable unit and widget tests with high coverage; integrated real-time PostgreSQL sync via Supabase, robust data persistence, and efficient state management.  
+
 
 **Software Engineer**  
 *KafkaTrace – OS Labs* | Remote  
