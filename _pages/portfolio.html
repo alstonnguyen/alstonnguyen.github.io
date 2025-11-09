@@ -94,6 +94,7 @@ author_profile: true
   {% endif %}
 </div>
 
+{% raw %}
 <script type="text/javascript">
 (function() {
   'use strict';
@@ -107,19 +108,16 @@ author_profile: true
     }
     
     function showTab(tabId) {
-      // Hide all content sections
       var allContents = document.querySelectorAll('.portfolio-tab-content');
       for (var i = 0; i < allContents.length; i++) {
         allContents[i].classList.remove('active');
       }
       
-      // Remove active from all tab buttons
       var allTabs = document.querySelectorAll('.portfolio-tab');
       for (var j = 0; j < allTabs.length; j++) {
         allTabs[j].classList.remove('active');
       }
       
-      // Show selected content and activate button
       var targetContent = document.getElementById(tabId);
       var targetButton = document.getElementById('tab-' + tabId);
       
@@ -131,7 +129,6 @@ author_profile: true
       }
     }
     
-    // Add click handlers
     document.getElementById('tab-live-ongoing').addEventListener('click', function(e) {
       e.preventDefault();
       showTab('live-ongoing');
@@ -148,7 +145,6 @@ author_profile: true
     });
   }
   
-  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initTabs);
   } else {
@@ -156,5 +152,6 @@ author_profile: true
   }
 })();
 </script>
+{% endraw %}
 
 
