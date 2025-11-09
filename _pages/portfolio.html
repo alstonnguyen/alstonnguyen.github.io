@@ -61,9 +61,9 @@ author_profile: true
 </style>
 
 <div class="portfolio-tabs">
-  <button class="portfolio-tab active" onclick="openTab(event, 'live-ongoing')">Live On-Going</button>
-  <button class="portfolio-tab" onclick="openTab(event, 'complete')">Complete Projects</button>
-  <button class="portfolio-tab" onclick="openTab(event, 'course')">Course Projects</button>
+  <button class="portfolio-tab active" data-tab="live-ongoing">Live On-Going</button>
+  <button class="portfolio-tab" data-tab="complete">Complete Projects</button>
+  <button class="portfolio-tab" data-tab="course">Course Projects</button>
 </div>
 
 <div id="live-ongoing" class="portfolio-tab-content active">
@@ -95,23 +95,38 @@ author_profile: true
 </div>
 
 <script>
-function openTab(evt, tabName) {
-  // Hide all tab contents
-  var tabContents = document.getElementsByClassName("portfolio-tab-content");
-  for (var i = 0; i < tabContents.length; i++) {
-    tabContents[i].classList.remove("active");
-  }
-  
-  // Remove active class from all tabs
-  var tabs = document.getElementsByClassName("portfolio-tab");
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].classList.remove("active");
-  }
-  
-  // Show the selected tab content and mark tab as active
-  document.getElementById(tabName).classList.add("active");
-  evt.currentTarget.classList.add("active");
-}
+(function() {
+  // Wait for DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    var tabs = document.querySelectorAll('.portfolio-tab');
+    
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var targetTab = this.getAttribute('data-tab');
+        
+        // Hide all tab contents
+        var tabContents = document.querySelectorAll('.portfolio-tab-content');
+        tabContents.forEach(function(content) {
+          content.classList.remove('active');
+        });
+        
+        // Remove active class from all tabs
+        tabs.forEach(function(t) {
+          t.classList.remove('active');
+        });
+        
+        // Show the selected tab content and mark tab as active
+        var targetContent = document.getElementById(targetTab);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+        this.classList.add('active');
+      });
+    });
+  });
+})();
 </script>
 
 
