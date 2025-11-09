@@ -2,6 +2,13 @@
 title: 'ScentStealer'
 excerpt: "Community-driven platform for discovering affordable fragrance clones and designer perfume alternatives <br/><img src='/images/ScentStealer.png'>"
 collection: portfolio
+category: "Live On-Going"
+tags:
+  - fullstack
+  - typescript
+  - mern
+  - oauth
+  - seo
 ---
 
 ## Table of Contents

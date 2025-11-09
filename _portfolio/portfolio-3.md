@@ -2,6 +2,13 @@
 title: "KafkaTrace"
 excerpt: "Visualization and Instrumentation of Apps Run on Apache Kafka <br/><img src='/images/KafkaTrace.png'>"
 collection: portfolio
+category: "Complete Projects"
+tags:
+  - processimprovement
+  - kafka
+  - monitoring
+  - opentelemetry
+  - typescript
 ---
 
 ## Table of Contents

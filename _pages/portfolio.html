@@ -7,8 +7,29 @@ author_profile: true
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
+<h2>Live On-Going Projects</h2>
+<p>Current projects in active development</p>
+{% assign live_projects = site.portfolio | where: "category", "Live On-Going" | sort: "date" | reverse %}
+{% for post in live_projects %}
   {% include archive-single.html %}
 {% endfor %}
+
+<h2>Complete Projects</h2>
+<p>Finished projects demonstrating process improvement and technical expertise</p>
+{% assign complete_projects = site.portfolio | where: "category", "Complete Projects" | sort: "date" | reverse %}
+{% for post in complete_projects %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>Course Projects</h2>
+<p>Academic projects and coursework demonstrations</p>
+{% assign course_projects = site.portfolio | where: "category", "Course Projects" | sort: "date" | reverse %}
+{% if course_projects.size > 0 %}
+  {% for post in course_projects %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p><em>Coming soon...</em></p>
+{% endif %}
+
 

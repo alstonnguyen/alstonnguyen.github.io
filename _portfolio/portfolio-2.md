@@ -2,6 +2,13 @@
 title: "Tracking Occupancy In Clinic Waiting Rooms or Restaurants"
 excerpt: "Application was created using actual live streamed video and computer vision tracking packages such as OpenCV, YOLOv8, DeepSORT. <br/><img src='/images/OccupancyOverTime.png'>"
 collection: portfolio
+category: "Complete Projects"
+tags:
+  - processimprovement
+  - computervision
+  - python
+  - opencv
+  - yolov8
 ---
 
 ## Concept Ideation and Further Exploration
