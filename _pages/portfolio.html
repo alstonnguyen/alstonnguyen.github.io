@@ -34,13 +34,13 @@ author_profile: true
   }
   
   .portfolio-tab.active {
-    color: #0066cc;
-    border-bottom-color: #0066cc;
+    color: #0066cc !important;
+    border-bottom-color: #0066cc !important;
     font-weight: 600;
   }
   
   .portfolio-tab-content {
-    display: none;
+    display: none !important;
     animation: fadeIn 0.3s ease-in;
   }
   
@@ -61,9 +61,9 @@ author_profile: true
 </style>
 
 <div class="portfolio-tabs">
-  <button class="portfolio-tab active" id="tab-live-ongoing">Live On-Going</button>
-  <button class="portfolio-tab" id="tab-complete">Complete Projects</button>
-  <button class="portfolio-tab" id="tab-course">Course Projects</button>
+  <button class="portfolio-tab active" id="tab-live-ongoing" type="button">Live On-Going</button>
+  <button class="portfolio-tab" id="tab-complete" type="button">Complete Projects</button>
+  <button class="portfolio-tab" id="tab-course" type="button">Course Projects</button>
 </div>
 
 <div id="live-ongoing" class="portfolio-tab-content active">
@@ -94,35 +94,67 @@ author_profile: true
   {% endif %}
 </div>
 
-<script>
-// Simple inline script that runs immediately
-document.getElementById('tab-live-ongoing').onclick = function() {
-  showTab('live-ongoing');
-};
-
-document.getElementById('tab-complete').onclick = function() {
-  showTab('complete');
-};
-
-document.getElementById('tab-course').onclick = function() {
-  showTab('course');
-};
-
-function showTab(tabId) {
-  // Hide all content
-  document.getElementById('live-ongoing').classList.remove('active');
-  document.getElementById('complete').classList.remove('active');
-  document.getElementById('course').classList.remove('active');
+<script type="text/javascript">
+(function() {
+  'use strict';
   
-  // Remove active from all tabs
-  document.getElementById('tab-live-ongoing').classList.remove('active');
-  document.getElementById('tab-complete').classList.remove('active');
-  document.getElementById('tab-course').classList.remove('active');
+  function initTabs() {
+    var tabButtons = document.querySelectorAll('.portfolio-tab');
+    
+    if (!tabButtons || tabButtons.length === 0) {
+      console.error('Portfolio tabs not found');
+      return;
+    }
+    
+    function showTab(tabId) {
+      // Hide all content sections
+      var allContents = document.querySelectorAll('.portfolio-tab-content');
+      for (var i = 0; i < allContents.length; i++) {
+        allContents[i].classList.remove('active');
+      }
+      
+      // Remove active from all tab buttons
+      var allTabs = document.querySelectorAll('.portfolio-tab');
+      for (var j = 0; j < allTabs.length; j++) {
+        allTabs[j].classList.remove('active');
+      }
+      
+      // Show selected content and activate button
+      var targetContent = document.getElementById(tabId);
+      var targetButton = document.getElementById('tab-' + tabId);
+      
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+      if (targetButton) {
+        targetButton.classList.add('active');
+      }
+    }
+    
+    // Add click handlers
+    document.getElementById('tab-live-ongoing').addEventListener('click', function(e) {
+      e.preventDefault();
+      showTab('live-ongoing');
+    });
+    
+    document.getElementById('tab-complete').addEventListener('click', function(e) {
+      e.preventDefault();
+      showTab('complete');
+    });
+    
+    document.getElementById('tab-course').addEventListener('click', function(e) {
+      e.preventDefault();
+      showTab('course');
+    });
+  }
   
-  // Show selected content and activate tab
-  document.getElementById(tabId).classList.add('active');
-  document.getElementById('tab-' + tabId).classList.add('active');
-}
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTabs);
+  } else {
+    initTabs();
+  }
+})();
 </script>
 
 
